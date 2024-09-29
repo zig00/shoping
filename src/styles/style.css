@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    color: #2c2c2c;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+/* pirvei reklama */
+.header-advertisement {
+    height: 750px;
+    border-radius: 20px;
+    background: url("/src/images/Group\ 69.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 62px;
+    width: 85%;
+    max-width: 1680px;
+}
+.header-advertisement h1 {
+    width: 475px;
+    font-size: 92px;
+    font-weight: bold;
+    word-break: break-word;
+    margin-left: 100px;
+    position: relative;
+    top: 35px;
+}
+.header-advertisement p {
+    margin-left: 100px;
+    margin-top: 65px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.header-advertisement button {
+    background: #242323;
+    color: #fff;
+    font-size: 26px;
+    padding: 14px 23px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: max-content;
+    margin-left: 100px;
+    margin-top: 45px;
+}
+/* -----------------------------------------------------------------------------------------partners */
+.partners {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ebd96b;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    margin-top: 62px;
+}
+.partners ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+/* --------------------------------------------------------------------------------------------------items list */
+.ItemsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 4%;
+    width: 85%;
+    max-width: 1680px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+.ItemsList img {
+    width: 100%;
+    max-width: 320px;
+    max-height: 335px;
+}
+.ItemsList .itemdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    border-radius: 14px;
+    padding: 15px 22px;
+    box-shadow: 0px 10px 20px 0px rgba(12, 15, 48, 0.2);
+    width: 100%;
+    max-width: 355px;
+    box-sizing: border-box;
+    position: relative;
+}
+.iteminfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+    box-shadow: none !important;
+    position: relative;
+}
+.OpenItemsmodal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: none;
+    z-index: 22;
+    border: none;
+    outline: none;
+}
+.ItemTitle {
+    margin-top: 20px;
+}
+.brand {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.size {
+    margin-top: 5px;
+    font-size: 15px;
+}
+p span {
+    font-weight: 700;
+}
+.itemcolor {
+    font-size: 15px;
+}
+.ItemsList .itemdiv:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.ItemsList .itemdiv:hover .OpenItemsmodal{
+    display: flex;
+}
+.ItemsList .itemdiv:hover img {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: 0.2s all ease-in;
+}
+.ItemsList .itemdiv:not(:hover){
+    transform: scale(1);
+    transition: 0.2s all ease-in;
+}
+
+.itemprice {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*-----------------------------------------------------------------------------------------------------fashionn */
+.brands-row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 15px;
+    width: 85%;
+    max-width: 1680px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.fashionsitemlist{
+    margin-top: 100px !important;
+}
+.brad-col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.brad-col1 img {
+    width: 100%;
+    max-width: 120px;
+}
+.searchbtn{
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 13px 18px;
+    background: lightgreen;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    display: flex;
+    width: max-content;
+    user-select: none;
+}
+/* ---------------------------------MODAL */
+.itemModalWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: fill !important;
+    background: #2c2c2c48;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+
+}
+.itemModalInner{
+    width: 70%;
+    max-width: 1300px;
+    min-width: 1300px;
+    display: flex;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    background: white;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.itemModalInner button{
+    position: relative;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.itemfulldesc{
+    display: flex;
+    flex-direction: column;
+}
+.itemfulldesc .top{
+    display: flex;
+    align-items: flex-start
+    
+}
+.itemfulldesc .top .top-col{
+    padding: 30px 40px;
+    padding-left: 60px;
+    display:flex;
+    flex-direction: column;
+}
+.itemModalInner .ItemTitle{
+font-size: 26px;
+}
+.itemModalInner .brand{
+    font-size: 18px;
+}
+.itemModalInner .size{
+    font-size: 18px;
+}
+.itemModalInner .itemcolor{
+    font-size: 18px;
+}
+.itemdesc{
+    font-size: 18px;
+    margin-top: 25px;
+}
+.modalitemsbuttons{
+    margin-top: 25px;
+    margin-left: auto;
+    
+}
+.btn{
+    margin: 0 32px;
+    padding: 12px 19px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.add-to-cart{
+    background: #ebd96b !important;
+    color: #2c2c2c;
+    font-weight: 500;
+    font-size: 16px !important;
+}
+.buy-now{
+    border: 2px solid #f0da4c !important;
+    color: #f0da4c;
+}
+.top .itemprice{
+    position: inherit;
+}
