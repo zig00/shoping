@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Outlet, Link } from "react-router-dom";
 import Headerlogo from "../images/Frame 57.png"
 import "../styles/header.css"
