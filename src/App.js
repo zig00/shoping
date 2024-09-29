@@ -1,7 +1,6 @@
-import ReactDOM from "react-dom/client";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/headers";
-import Footer from "./Components/Footer"
 import Catalogue from "./pages/Catalogue"
 import Fashion from "./pages/Fashion"
 import Favourite from "./pages/Favourite"
