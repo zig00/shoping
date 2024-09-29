@@ -1,5 +1,4 @@
 import React from 'react'
-import Oneitem from './oneitem'
 import { useNavigate } from "react-router-dom";
 const ItemModal = ({ isOpen, onClose, children, chosedItem }) => {
 
