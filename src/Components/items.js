@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import ItemModal from '../Components/ItemModal'
-import iteminner from '../pages/iteminner'
 import Oneitem from './oneitem'
 const _Items = [
     {
